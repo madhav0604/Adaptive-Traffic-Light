@@ -57,7 +57,7 @@ module smart_traffic_controller (
 
     //30%
     function [31:0] get_straight_only_duration;
-        input [1:0] sensor;2
+        input [1:0] sensor;//2 bit
         begin
             get_straight_only_duration = get_dynamic_green_total(sensor) - get_straight_right_duration(sensor);
         end
